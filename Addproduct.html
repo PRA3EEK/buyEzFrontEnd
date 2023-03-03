@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #productDetails {
+        border: 1 px solid black;
+        width: 70%;
+        margin: auto;
+    }
+
+    #productDetails>input {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #add {
+        font-size: 20px;
+        transition: 1s;
+
+    }
+
+    #add:hover {
+        background-color: black;
+        color: white;
+
+    }
+</style>
+
+<body>
+
+    <h1>Add product</h1>
+    <label for="cat">Select category</label>
+    <select name="Category" id="cat" style="height: 30px; padding: 0 10px 0 10px; cursor: pointer;" required onchange="test();">
+       
+    </select>
+
+    <form action="" id="productDetails">
+        <input type="text" name="" id="name" placeholder="Product Name" required>
+        <input type="text" name="" id="color" placeholder="Color" required>
+        <input type="number" name="" id="mrp" placeholder="Market price" required>
+        <input type="number" name="" id="sp" placeholder="Sale price" required>
+        <input type="text" name="" id="dim" placeholder="Dimensions" required>
+        <input type="text" name="" id="specs" placeholder="Specifications" required>
+        <input type="text" name="" id="quant" placeholder="Quantity" required>
+        <input type="text" name="" id="manu" placeholder="Manufacturer" required>
+        <input type="text" name="img[]" id="img1" placeholder="Image url 1" required>
+        <input type="text" name="img[]" id="img2" placeholder="Image url 2">
+        <input type="text" name="img[]" id="img3" placeholder="Image url 3">
+        <input type="text" name="img[]" id="img4" placeholder="Image url 4">
+        <input type="text" name="img[]" id="img5" placeholder="Image url 5">
+        <input type="text" name="img[]" id="img6" placeholder="Image url 6">
+        <input type="submit" name="Add" id="add" value="Add" 
+            style="width: 30%; height: 50px; border: none; cursor: pointer;">
+    </form>
+
+</body>
+
+</html>
+<script src="/scripts/addProduct.js">
+   
+       
+</script>

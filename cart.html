@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <style >
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-family: 'Mukta', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+ 
+        #errorMessage{
+        /* border: 1px solid white; */
+        width: 100%;
+        padding: 4vw;
+        color: white;
+        border: 1px solid white;
+        
+    }
+    #errorMessage>div>p{
+        margin-bottom: 3vw;
+        font-size: 1.5vw;
+    }
+    .link{
+        border: 0.5px solid white;
+        padding: 1vw;
+        margin-left: 2vw;
+        color: #797979;
+        border-radius: 1vw;
+        transition: 0.5s;
+    }
+    .link:hover{
+        color: white
+        ;
+    }
+    .btn:hover{
+        background-color: #2d2d2d;
+    }
+    .links
+    {
+        color: #797979;
+        transition: 0.5s;
+
+    }
+    .links:hover{
+        color: white;
+    }
+        #content{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+           
+        }
+        #content>div:nth-child(1){
+            padding: 5vw;
+        }
+        #content>div:nth-child(1)>div{
+            padding: 2vw;
+            display: flex;
+
+            /* box-shadow: rgb(0, 0, 0) 0px 5px 15px; */
+            margin-bottom: 3vw;
+        }
+        #content>div:nth-child(1)>div>div:nth-child(2){
+            padding-left: 2vw;
+        }
+        #checkout{
+            border: 1px solid white;
+            border-radius: 0.5vw;
+            width: 30%;
+            position: fixed;
+            right: 5vw;
+            top: 10vw;
+            padding: 3vw;
+        }
+        .btn{
+            /* width: 10vw; */
+  border: 1px solid white;
+  color: white;
+  border-radius:   0.5vw;
+  height: 3vw;
+  cursor: pointer;
+  transition: 0.5s;
+  letter-spacing: 0.1vw;
+  background-color: #121212;
+  margin: .5vw;
+  font-size: 100%;
+  margin-top: 2vw;
+  padding: 0 1vw 0 1vw;
+        }
+        .quantInput{
+            border: none;
+            border-bottom: 1px solid white;
+            transition: 1s;
+            height: 3vw;
+            padding: 1vw;
+            font-size: 90%;
+        }
+        .quantInput:focus{
+      
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="totalAmount">
+
+    </div>
+    <div id="content">
+
+        <div id="cart">
+     
+        </div>
+        <div id="checkout">
+            <div id="amount">
+
+            </div>
+             <button id="order" class="btn" onclick="placeOrder()">
+                Place Order
+             </button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+<script src="/scripts/cart.js">
+   
+</script>
