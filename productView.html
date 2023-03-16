@@ -11,36 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
 </head>
 <style>
-    *{
+    * {
         padding: 0;
         margin: 0;
         font-family: 'Mukta', sans-serif;
         /* box-sizing: border-box; */
         color: #797979;
     }
-    body{
-        background-color: #121212
-        ;
+
+    body {
+        background-color: #121212;
     }
-    #pDiv{
+
+    #pDiv {
         display: grid;
         grid-template-columns: 5% 30% 50%;
         /* height: 500px; */
         justify-content: space-around;
     }
-    #pDiv>div{
+
+    #pDiv>div {
         /* border: 1px solid red; */
         /* height: auto; */
     }
-    #view{
+
+    #view {
         text-align: center;
     }
-    #view>img{
-       width: 60%;
-       margin-top: 10px;
-       cursor: pointer;
+
+    #view>img {
+        width: 60%;
+        margin-top: 10px;
+        cursor: pointer;
     }
-    #image{
+
+    #image {
         position: relative;
         display: grid;
         justify-content: space-around;
@@ -48,38 +53,45 @@
         text-align: center;
         height: 80vh;
         margin-top: 7vh;
-      cursor: pointer;
+        cursor: pointer;
         transition: 0.5s;
         box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
         padding: 0 5vh 0 5vh;
         border-radius: 3vh;
     }
-    #image:hover .btn{
+
+    #image:hover .btn {
         display: block;
         animation-name: btnSlideIn;
         animation-duration: 0.75s;
     }
-    #image>img{
+
+    #image>img {
         margin: auto;
         width: 90%;
     }
-    #title{
-       /* color: white; */
+
+    #title {
+        /* color: white; */
         width: 100%;
     }
-    #specs{
-       
+
+    #specs {
+
         /* border: 1px solid red; */
         width: 50%;
     }
-    #details{
+
+    #details {
         padding: 5vh;
         /* background-color: #2d2d2d; */
     }
-    #details>p{
+
+    #details>p {
         margin-top: 10px;
     }
-    .btn{
+
+    .btn {
         width: 30%;
         position: absolute;
         right: 7vh;
@@ -93,21 +105,25 @@
         cursor: pointer;
         transition: 0.5s;
     }
-    .btn:hover{
+
+    .btn:hover {
         background-color: #2d2d2d;
-        
+
     }
-    @keyframes btnSlideIn{
-        from{
+
+    @keyframes btnSlideIn {
+        from {
             opacity: 0;
             bottom: 0vh;
         }
-        to{
+
+        to {
             opacity: 1;
             bottom: 4vh;
         }
     }
 </style>
+
 <body>
 
     <div id="pDiv">
@@ -118,6 +134,6 @@
 
 </html>
 <script src="/scripts/productView.js">
-  
-    
+
+
 </script>

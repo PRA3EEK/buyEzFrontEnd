@@ -64,7 +64,7 @@
         border-bottom: 1px solid;
         background-color: transparent;
         color: white;
-        
+
     }
 
     #paymentForm input:focus {
@@ -133,7 +133,8 @@
         grid-template-columns: 100%;
         width: 30%;
     }
-    #addressForm input{
+
+    #addressForm input {
         background-color: transparent;
         color: white;
     }
@@ -170,8 +171,9 @@
         margin-top: 2vw;
         padding: 0 1vw 0 1vw;
     }
-    .button:hover{
-     background-color: #2d2d2d;
+
+    .button:hover {
+        background-color: #2d2d2d;
     }
 </style>
 
@@ -231,15 +233,18 @@
 
                 <label for="expiryMonth">Month</label><br>
                 <input type="number" id="expiryMonth" placeholder="MM" maxlength="2"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required><br>
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    required><br>
                 <label for="expiryYear">Year</label><br>
                 <input type="number" id="expiryYear" placeholder="YY" maxlength="2"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    required>
             </div>
             <label for="cvv">CVV</label>
             <input type="number" id="cvv" placeholder="CVV" maxlength="3"
-                oninput="javascript: if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
-            <input type="submit" value="Pay" >
+                oninput="javascript: if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                required>
+            <input type="submit" value="Pay">
         </form>
     </div>
 
