@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('productId');
 console.log(productId);
 
-fetch(`http://localhost:8765/buy_EZ/user/searchById?productId=${productId}`, {
+fetch(`http://localhost:8765/searchById?productId=${productId}`, {
     headers: {
         'Authorization': `Bearer ${cookie}`
     }

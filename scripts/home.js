@@ -49,7 +49,7 @@ if (cookie != "") {
 
 
 
-fetch('http://localhost:8765/buy_EZ/user/categories',
+fetch('http://localhost:8765/categories',
     {
         headers: {
             "Authorization": `Bearer ${cookie}`
@@ -65,7 +65,7 @@ fetch('http://localhost:8765/buy_EZ/user/categories',
             a.className = "catLink";
             a.innerText = categories[i].categoryName;
             div.addEventListener('click', () => {
-                fetch(`http://localhost:8765/buy_EZ/user/search?name=${categories[i].categoryName}`).then(response => { return response.json() }).then(response => { createBodyForPoducts(response) })
+                fetch(`http://localhost:8765/search?name=${categories[i].categoryName}`).then(response => { return response.json() }).then(response => { createBodyForPoducts(response) })
             });
             document.getElementById("categories").append(div);
         }
@@ -73,7 +73,7 @@ fetch('http://localhost:8765/buy_EZ/user/categories',
 
   let pageNumber = 1;
 
-fetch(`http://localhost:8765/buy_EZ/user/products?page=${pageNumber}&size=5`,
+fetch(`http://localhost:8765/products?page=${pageNumber}&size=5`,
     {
         headers: {
             "Authorization": `Bearer ${cookie}`
@@ -103,7 +103,7 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
 
 
 function search(name) {
-    fetch(`http://localhost:8765/buy_EZ/user/search?name=${name}`).then((response) => {
+    fetch(`http://localhost:8765/search?name=${name}`).then((response) => {
         if (response.ok) {
             return response.json();
         }
@@ -148,7 +148,7 @@ function createBodyForPoducts(response) {
 
         btn.onclick = function () {
 
-            fetch(`http://localhost:8765/buy_EZ/user/add-cart?productId=${arr[i].productId}&quantity=1`, {
+            fetch(`http://localhost:8765/add-cart?productId=${arr[i].productId}&quantity=1`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',
